@@ -10,10 +10,7 @@ export default function AppCard({iconColor, source, appName, appCategory}){
                 borderBottomLeftRadius: 5,
                 borderTopLeftRadius: 5,
             }}>
-                <Image 
-                    source={source}
-                    style={styles.image}
-                />
+                <Image source={require('../imgs/Ximages.png')} style={styles.image}/>
             </View>
             <View style={styles.infoContainer}>
                 <Text style={styles.appName}>
@@ -40,9 +37,10 @@ const styles = {
         borderRadius: 5
     },
     image:{
-        height: 40,
-        width: 40,
+        height: 50,
+        width: 50,
         alignSelf: 'center',
+        marginVertical: 20,
         borderRadius: 100,
     },
     infoContainer:{
