@@ -34,13 +34,13 @@ const styles ={
         marginLeft: 10
     },
     button:{
-        height: 55,
+        height: 50,
         width: 130,
-        borderRadius: 7,
+        borderRadius: 5,
         backgroundColor: '#228b22',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 5
+        marginTop: 10
         
 
     },
