@@ -31,11 +31,11 @@ const styles ={
         backgroundColor: 'white',
         padding: 10,
         fontWeight: 'bold',
-        marginLeft: -1
+        marginLeft: 10
     },
     button:{
         height: 55,
-        width: 135,
+        width: 130,
         borderRadius: 7,
         backgroundColor: '#228b22',
         justifyContent: 'center',

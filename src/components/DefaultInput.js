@@ -1,11 +1,13 @@
 import React from 'react';
 import {Text, View, TouchableHighlight, TextInput } from 'react-native';
 
-export default function DefaulInput({placeholder}){
+export default function DefaulInput({placeholder, onChangeText, value}){
     return(
         <TextInput
-          style={styles.textInput}
-          placeholder={placeholder}
+            style={styles.textInput}
+            placeholder={placeholder}
+            onChangeText={onChangeText}
+            value={value}
         />
     )
 };

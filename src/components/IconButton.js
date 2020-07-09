@@ -1,13 +1,13 @@
 import React from 'react';
-import { TouchableHighlight, Text } from 'react-native'
+import {Text, TouchableOpacity } from 'react-native'
 
 export default function IconButton({onPress, icon}){
     return(
-        <TouchableHighlight onPress={onPress}>
+        <TouchableOpacity onPress={onPress}>
           <Text style={styles.textButton}>
             {icon}
           </Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
     )
 }
 

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import {TextInput, Text, View,} from 'react-native';
 
-export default function ColorSelector(){
+export default function ColorSelector({onChangeText, value}){
     const [colorSelected, setColor] = useState('#228b22')
     return(
        <View style={styles.selectorContainer}>
             <TextInput
                 style={styles.textInput}
                 placeholder='Pick a color'
-                onChangeText={text => setColor(text)}
-                maxLength={9}
+                onChangeText={text => {setColor(text); onChangeText(text);}}
+                maxLength={10}
+                value={value}
            />
             <View style={{
                 backgroundColor: `${colorSelected}`, 
