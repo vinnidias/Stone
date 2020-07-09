@@ -24,7 +24,7 @@ export default function App() {
           icon={'✖️'} 
           onPress={()=>{
             Alert.alert(
-              'Do you want to leave?',
+              'Do you really want to leave?',
               '',
             [
               {
@@ -90,7 +90,7 @@ export default function App() {
             setAppName('');
             setCategory('')
           }else{
-            Alert.alert('Some data is incomplete!')
+            Alert.alert('Incompleted data!')
           }
           
         }}
