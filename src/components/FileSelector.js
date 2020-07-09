@@ -17,7 +17,7 @@ export default function FileSelector({onPress, placeholder}){
             </View>
         </View>
     )
-}
+};
 
 const styles ={
     selectorContainer:{
@@ -51,4 +51,4 @@ const styles ={
         
     }
 
-}
+};

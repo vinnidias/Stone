@@ -8,7 +8,7 @@ export default function DefaulInput({placeholder}){
           placeholder={placeholder}
         />
     )
-}
+};
 
 const styles ={
     textInput:{
@@ -21,5 +21,5 @@ const styles ={
         padding: 10,
         fontWeight: 'bold'
     }
-}
+};
   
