@@ -1,8 +1,9 @@
 import React from 'react';
-import {Text, View, TouchableHighlight, TextInput } from 'react-native';
+import {Text, View,} from 'react-native';
 import IconButton from './src/components/IconButton'
 import DefaultInput from './src/components/DefaultInput'
 import FileSelector from './src/components/FileSelector'
+import ColorSelector from './src/components/ColorSelector'
 
 export default function App() {
   return (
@@ -31,6 +32,13 @@ export default function App() {
         <Text style={styles.appNameText}>
           ICON'S BACKGROUND COLOR
         </Text>
+        <ColorSelector/>
+      </View>
+      <View style={styles.appNameContainer}>
+        <Text style={styles.appNameText}>
+          CATEGORY
+        </Text>
+        <DefaultInput placeholder={'Select Category'}/>
       </View>
     </View>
   );
@@ -52,7 +60,7 @@ const styles ={
     fontWeight: 'bold'
   },
   appNameContainer:{
-    margin: 10
+    margin: 5
   },
   appNameText:{
     fontSize:18,
